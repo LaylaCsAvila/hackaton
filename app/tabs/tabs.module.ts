@@ -1,10 +1,10 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 
-import { BrowseComponent } from "./browse/browse.component";
-import { FeaturedComponent } from "./featured/featured.component";
-import { HomeComponent } from "./home/home.component";
-import { SearchComponent } from "./search/search.component";
+import { AtividadesComponent } from "./atividades/atividades.component";
+import { CaronasComponent } from "./caronas/caronas.component";
+import { EstudoComponent } from "./estudo/estudo.component";
+import { EventosComponent } from "./eventos/eventos.component";
 import { SettingsComponent } from "./settings/settings.component";
 import { TabsRoutingModule } from "./tabs-routing.module";
 import { TabsComponent } from "./tabs.component";
@@ -16,10 +16,10 @@ import { TabsComponent } from "./tabs.component";
     ],
     declarations: [
         TabsComponent,
-        HomeComponent,
-        BrowseComponent,
-        SearchComponent,
-        FeaturedComponent,
+        CaronasComponent,
+        AtividadesComponent,
+        EventosComponent,
+        EstudoComponent,
         SettingsComponent
     ],
     schemas: [
