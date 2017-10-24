@@ -2,7 +2,22 @@
 This is the component view that represents the 'Eventos' tab.
 Feel free to customize layouts and components to change how the tab view looks.
 -->
-<GridLayout class="page page-content" tkMainContent>
-    <Label class="page-icon fa" text="&#xf1ea;"></Label>
-    <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
-</GridLayout>
+<StackLayout class="page page-content" tkMainContent>
+    <StackLayout class="page-header">
+        <Button text="Acadêmicos" (tap)="academics()"></Button>
+        <Button text="Cultura e Lazer" (tap)="cultureAndRecreation()"></Button>
+        <Button text="Grupos de Debate" (tap)="debateGroups()"></Button>
+    </StackLayout>
+
+    <StackLayout class="post-listing" *ngIf="checkIf(0)">
+        <Label text="ACADÊMICOS"></Label>
+    </StackLayout>
+
+    <StackLayout class="post-listing" *ngIf="checkIf(1)">
+        <Label text="CULTURA E LAZER"></Label>
+    </StackLayout>
+
+    <StackLayout class="post-listing" *ngIf="checkIf(2)">
+        <Label text="GRUPO DE DEBATE"></Label>
+    </StackLayout>
+</StackLayout>

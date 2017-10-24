@@ -2,7 +2,17 @@
 This is the component view that represents the 'Search' tab.
 Feel free to customize layouts and components to change how the tab view looks.
 -->
-<GridLayout class="page page-content" tkMainContent>
-    <Label class="page-icon fa" text="&#xf002;"></Label>
-    <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
-</GridLayout>
+<StackLayout class="page page-content" tkMainContent>
+    <StackLayout class="page-header">
+        <Button text="Para Eventos" (tap)="forEvents()"></Button>
+        <Button text="Dia a Dia" (tap)="forEveryday()"></Button>
+    </StackLayout>
+
+    <StackLayout class="post-listing" *ngIf="checkIf(0)">
+        <Label text="PARA EVENTOS"></Label>
+    </StackLayout>
+
+    <StackLayout class="post-listing" *ngIf="checkIf(1)">
+        <Label text="DIA A DIA"></Label>
+    </StackLayout>
+</StackLayout>

@@ -2,7 +2,17 @@
 This is the component view that represents the 'Featured' tab.
 Feel free to customize layouts and components to change how the tab view looks.
 -->
-<GridLayout class="page page-content" tkMainContent>
-    <Label class="page-icon fa" text="&#xf005;"></Label>
-    <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
-</GridLayout>
+<StackLayout class="page page-content" tkMainContent>
+    <StackLayout class="page-header">
+        <Button text="Esportes" (tap)="sports()"></Button>
+        <Button text="Cursos Livres" (tap)="openCourses()"></Button>
+    </StackLayout>
+
+    <StackLayout class="post-listing" *ngIf="checkIf(0)">
+        <Label text="ESPORTES"></Label>
+    </StackLayout>
+
+    <StackLayout class="post-listing" *ngIf="checkIf(1)">
+        <Label text="CURSOS LIVRES"></Label>
+    </StackLayout>
+</StackLayout>

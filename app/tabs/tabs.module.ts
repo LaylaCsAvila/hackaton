@@ -5,7 +5,7 @@ import { AtividadesComponent } from "./atividades/atividades.component";
 import { CaronasComponent } from "./caronas/caronas.component";
 import { EstudoComponent } from "./estudo/estudo.component";
 import { EventosComponent } from "./eventos/eventos.component";
-import { StandComponent } from "./stand/stand.component";
+import { EstandeComponent } from "./estande/estande.component";
 import { TabsRoutingModule } from "./tabs-routing.module";
 import { TabsComponent } from "./tabs.component";
 
@@ -20,7 +20,7 @@ import { TabsComponent } from "./tabs.component";
         AtividadesComponent,
         EventosComponent,
         EstudoComponent,
-        StandComponent
+        EstandeComponent
     ],
     schemas: [
         NO_ERRORS_SCHEMA

@@ -1,0 +1,23 @@
+<!--
+This is the component view that represents the 'Estande' tab.
+Feel free to customize layouts and components to change how the tab view looks.
+-->
+<StackLayout class="page page-content" tkMainContent>
+    <StackLayout class="page-header">
+        <Button text="Anúncio de Comida" (tap)="foodAdvertisement()"></Button>
+        <Button text="Trocas" (tap)="exchange()"></Button>
+        <Button text="Produtos" (tap)="products()"></Button>
+    </StackLayout>
+
+    <StackLayout class="post-listing" *ngIf="checkIf(0)">
+        <Label text="ANÚNCIO DE COMIDA"></Label>
+    </StackLayout>
+
+    <StackLayout class="post-listing" *ngIf="checkIf(1)">
+        <Label text="TROCAS"></Label>
+    </StackLayout>
+
+    <StackLayout class="post-listing" *ngIf="checkIf(2)">
+        <Label text="PRODUTOS"></Label>
+    </StackLayout>
+</StackLayout>
