@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/layla/Desktop/layla/projetos/hackaton/app-hackaton/platforms/android/build/intermediates/res/merged/F0/debug/drawable-mdpi/background.png",
+        "source": "/home/layla/Desktop/layla/projetos/hackaton/app-hackaton/platforms/android/src/main/res/drawable-mdpi/background.png"
+    },
+    {
+        "merged": "/home/layla/Desktop/layla/projetos/hackaton/app-hackaton/platforms/android/build/intermediates/res/merged/F0/debug/drawable-mdpi/icon.png",
+        "source": "/home/layla/Desktop/layla/projetos/hackaton/app-hackaton/platforms/android/src/main/res/drawable-mdpi/icon.png"
+    },
+    {
+        "merged": "/home/layla/Desktop/layla/projetos/hackaton/app-hackaton/platforms/android/build/intermediates/res/merged/F0/debug/drawable-mdpi/logo.png",
+        "source": "/home/layla/Desktop/layla/projetos/hackaton/app-hackaton/platforms/android/src/main/res/drawable-mdpi/logo.png"
+    }
+]

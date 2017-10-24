@@ -1,0 +1,4 @@
+#Tue Oct 24 11:02:15 BRST 2017
+base.0=/home/layla/Desktop/layla/projetos/hackaton/app-hackaton/platforms/android/build/intermediates/transforms/dex/F0/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/home/layla/Desktop/layla/projetos/hackaton/app-hackaton/platforms/android/build/intermediates/transforms/dex/F0/debug/folders/1000/1f/main/classes.dex
