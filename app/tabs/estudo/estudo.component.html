@@ -2,7 +2,22 @@
 This is the component view that represents the 'Home' tab.
 Feel free to customize layouts and components to change how the tab view looks.
 -->
-<GridLayout class="page page-content" tkMainContent>
-    <Label class="page-icon fa" text="&#xf015;"></Label>
-    <Label class="page-placeholder" text="<!-- Page content goes here -->"></Label>
-</GridLayout>
+<StackLayout class="page page-content" tkMainContent>
+    <StackLayout class="page-header">
+        <Button text="Grupos de Estudo" (tap)="studyGroups()"></Button>
+        <Button text="Troca de Aulas" (tap)="lessonExchange()"></Button>
+        <Button text="Aulas Particulares" (tap)="privateLessons()"></Button>
+    </StackLayout>
+
+    <StackLayout class="post-listing" *ngIf="checkIf(0)">
+        <Label text="GRUPOS DE ESTUDO"></Label>
+    </StackLayout>
+
+    <StackLayout class="post-listing" *ngIf="checkIf(1)">
+        <Label text="TROCA DE AULAS"></Label>
+    </StackLayout>
+
+    <StackLayout class="post-listing" *ngIf="checkIf(2)">
+        <Label text="AULAS PARTICULARES"></Label>
+    </StackLayout>
+</StackLayout>
