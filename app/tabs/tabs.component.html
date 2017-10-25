@@ -13,7 +13,7 @@ http://docs.nativescript.org/angular/code-samples/ui/tab-view
     To add a new TabView item, add a new layout component with a tabItem Angular directive.
     Assign the tabItem directive an object that declares the tab item button's title and icon source.
     -->
-    <StackLayout *tabItem="{title: 'Estudo', iconSource: getIconSource('home')}">
+    <StackLayout *tabItem="{title: 'Estudo', iconSource: getIconSource('student')}">
         <!--
         You can declare the layout and components of each view inside the TabView items directly.
         In this case the view contents and back end logic are separated in nested components.
@@ -21,16 +21,16 @@ http://docs.nativescript.org/angular/code-samples/ui/tab-view
         -->
         <Estudo></Estudo>
     </StackLayout>
-    <StackLayout *tabItem="{title: 'Eventos', iconSource: getIconSource('browse')}">
+    <StackLayout *tabItem="{title: 'Eventos', iconSource: getIconSource('event')}">
         <Eventos></Eventos>
     </StackLayout>
-    <StackLayout *tabItem="{title: 'Caronas', iconSource: getIconSource('search')}">
+    <StackLayout *tabItem="{title: 'Carona', iconSource: getIconSource('carona')}">
         <Caronas></Caronas>
     </StackLayout>
-    <StackLayout *tabItem="{title: 'Atividades', iconSource: getIconSource('favorites')}">
+    <StackLayout *tabItem="{title: 'Ativida-des', iconSource: getIconSource('atividade')}">
         <Atividades></Atividades>
     </StackLayout>
-    <StackLayout *tabItem="{title: 'Estande', iconSource: getIconSource('settings')}">
+    <StackLayout *tabItem="{title: 'Estande', iconSource: getIconSource('estande')}">
         <Estande></Estande>
     </StackLayout>
 </TabView>
