@@ -7,13 +7,15 @@ export class PrivateLessons extends BasePost {
     price: number;
     subject: string;
     major: string;
+    wasTutor: Boolean
 
     constructor(postTitle: string, observations: string, tags: string[],
-        user: User, periodicity: string, price: number, subject: string, major: string){
+        user: User, periodicity: string, price: number, subject: string, major: string, wasTutor: Boolean){
         super(postTitle, observations, tags, user);
         this.periodicity = periodicity;
         this.price = price;
         this.subject = subject;
         this.major = major;
+        this.wasTutor = wasTutor;
     }
 }

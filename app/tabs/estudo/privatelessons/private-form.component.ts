@@ -23,6 +23,7 @@ export class PrivateFormComponent {
     price: number;
     subject: string;
     major: string;
+    wasTutor: Boolean;
 
 
     constructor(
@@ -50,6 +51,7 @@ export class PrivateFormComponent {
             this.price,
             this.subject,
             this.major,
+            this.wasTutor,
         )
         firebase.push(
             '/estudos/grupo',
