@@ -9,6 +9,7 @@ import firebase = require("nativescript-plugin-firebase");
 @Component({
     selector: "Estudo",
     providers: [BackendService],
+    styleUrls: ["./estudo.component.css"],
     moduleId: module.id,
     templateUrl: "./estudo.component.html"
 })
@@ -42,7 +43,7 @@ export class EstudoComponent implements OnInit {
                         post.postTitle,
                         post.observations,
                         post.tags,
-                        post.meta.user,
+                        post.meta,
                         post.periodicity,
                         post.maxPeople,
                         post.subject,

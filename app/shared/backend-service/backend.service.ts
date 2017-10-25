@@ -23,7 +23,7 @@ export class BackendService {
                 singleEvent: true,
                 orderBy: {
                     type: firebase.QueryOrderByType.CHILD,
-                    value: 'major'
+                    value: 'key'
                 },
                 limit: {
                     type: firebase.QueryLimitType.LAST,
