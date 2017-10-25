@@ -1,6 +1,7 @@
 import { Component, NgModule } from "@angular/core";
 
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
+import { Router } from "@angular/router"
 
 import { UserService } from "../../../shared/user/user.service";
 import { User } from "../../../shared/user/user.model";
@@ -21,9 +22,12 @@ export class StudyFormComponent {
     periodicity: string;
     maxPeople: number;
     subject: string;
-    major: string
+    major: string;
 
-    constructor(private userService: UserService){
+
+    constructor(
+        private router: Router,
+        private userService: UserService){        
         this.user = this.userService.user;
     }
 
@@ -54,6 +58,11 @@ export class StudyFormComponent {
             (res) => console.log(JSON.stringify(res)),
             (erro) => console.log(JSON.stringify(erro))
         )
+        this.goBack();
+    }
+
+    goBack(){
+        this.router.navigate(["/tabs"]);
     }
 
 }
