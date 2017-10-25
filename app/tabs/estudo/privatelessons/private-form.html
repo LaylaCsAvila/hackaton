@@ -1,4 +1,4 @@
-<ion-scroll>
+<ScrollView>
     <StackLayout orientation="vertical">
         <Label class="form-label" text="Título da Postagem"></Label>
         <TextField class="form-input" hint="Título" [(ngModel)]="postTitle" ></TextField>
@@ -8,7 +8,7 @@
         [(ngModel)]="periodicity" ></TextField>
 
         <Label class="form-label" text="Preço"></Label>
-        <TextField class="form-input" hint="Insira o preço por aula" 
+        <TextField class="form-input" hint="Insira o preço por aula"
         [(ngModel)]="price" ></TextField>
 
         <Label class="form-label" text="Matéria"></Label>
@@ -33,4 +33,4 @@
         <Button class="btn btn-primary btn-rouded-xsm btn-active" text="Criar Post" (tap)="submit()"></Button>
         <Button text="Voltar" (tap)="goBack()"></Button>
     </StackLayout>
-</ion-scroll>
+</ScrollView>

@@ -28,7 +28,7 @@ export class PrivateFormComponent {
 
     constructor(
         private router: Router,
-        private userService: UserService){        
+        private userService: UserService){
         this.user = this.userService.user;
     }
 
@@ -37,11 +37,7 @@ export class PrivateFormComponent {
     }
 
     submit() {
-        console.log("this.tags");
-        console.log(this.tags);
         let formatTags = this.filterTags(this.tags);
-        console.log("formatTags");
-        console.log(formatTags);
         let privateLessonsItem = new PrivateLessons(
             this.postTitle,
             this.observations,
@@ -54,7 +50,7 @@ export class PrivateFormComponent {
             this.wasTutor,
         )
         firebase.push(
-            '/estudos/grupo',
+            '/estudos/particular',
             privateLessonsItem
         ).then(
             (res) => console.log(JSON.stringify(res)),

@@ -35,11 +35,7 @@ export class LessonFormComponent {
     }
 
     submit() {
-        console.log("this.tags");
-        console.log(this.tags);
         let formatTags = this.filterTags(this.tags);
-        console.log("formatTags");
-        console.log(formatTags);
         let lessonExchangeItem = new LessonExchange(
             this.postTitle,
             this.observations,
@@ -50,7 +46,7 @@ export class LessonFormComponent {
             this.major
         )
         firebase.push(
-            '/estudos/lesson',
+            '/estudos/troca',
             lessonExchangeItem
         ).then(
             (res) => console.log(JSON.stringify(res)),

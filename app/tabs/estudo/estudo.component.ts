@@ -136,7 +136,6 @@ export class EstudoComponent implements OnInit {
                         post.major,
                         post.wasTutor,
                     )
-                    console.log(JSON.stringify(post));
                     this.loadedPostsPrivate.push(obj);
                 }
             }
