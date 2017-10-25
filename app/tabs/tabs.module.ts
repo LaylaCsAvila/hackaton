@@ -1,5 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
+import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
 import { AtividadesComponent } from "./atividades/atividades.component";
 import { CaronasComponent } from "./caronas/caronas.component";
@@ -8,11 +9,13 @@ import { EventosComponent } from "./eventos/eventos.component";
 import { EstandeComponent } from "./estande/estande.component";
 import { TabsRoutingModule } from "./tabs-routing.module";
 import { TabsComponent } from "./tabs.component";
+// import { StudyFormComponent } from "./estudo/studygroups/study-form.component";
 
 @NgModule({
     imports: [
         NativeScriptModule,
-        TabsRoutingModule
+        TabsRoutingModule,
+        NativeScriptFormsModule,
     ],
     declarations: [
         TabsComponent,
@@ -20,7 +23,8 @@ import { TabsComponent } from "./tabs.component";
         AtividadesComponent,
         EventosComponent,
         EstudoComponent,
-        EstandeComponent
+        EstandeComponent,
+        // StudyFormComponent,
     ],
     schemas: [
         NO_ERRORS_SCHEMA

@@ -1,5 +1,5 @@
-import { BasePost } from "../../shared/models/base-post";
-import { User } from "../../shared/user/user.model";
+import { BasePost } from "../../../shared/models/base-post";
+import { User } from "../../../shared/user/user.model";
 
 export class StudyGroup extends BasePost {
 

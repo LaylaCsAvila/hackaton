@@ -11,6 +11,7 @@ Feel free to customize layouts and components to change how the tab view looks.
 
     <StackLayout class="post-listing" *ngIf="checkIf(0)">
         <Label text="GRUPOS DE ESTUDO"></Label>
+        <Button text="Adicionar grupo de estudo" (tap)="studyGroupForm()"></Button>
     </StackLayout>
 
     <StackLayout class="post-listing" *ngIf="checkIf(1)">

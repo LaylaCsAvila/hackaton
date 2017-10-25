@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
     selector: "Estudo",
@@ -13,17 +14,12 @@ export class EstudoComponent implements OnInit {
         privateLessons = 2,
     */
 
-    constructor() {
-        /* ***********************************************************
-        * Use the constructor to inject services.
-        *************************************************************/
-    }
+    constructor(
+        private router: Router,
+    ) {}
 
     ngOnInit(): void {
         this.area = 4;
-        /* ***********************************************************
-        * Use the "ngOnInit" handler to initialize data for the view.
-        *************************************************************/
     }
 
     checkIf(area: number) {
@@ -37,6 +33,11 @@ export class EstudoComponent implements OnInit {
 
     studyGroups() {
         this.area = 0;
+    }
+
+    studyGroupForm() {
+        console.log("yay");
+        this.router.navigate(["/group-form"])
     }
 
     lessonExchange() {
