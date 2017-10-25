@@ -1,1 +1,45 @@
-.post-container{background-color:#CCCCCC;margin:30px;width:85%;border-radius:10%}.post-value{font-size:18px;margin:5px;padding:5px}.header{border-radius:8%;font-weight:bold;font-size:24px;color:white;background-color:#37BEFF}.page-header{padding-top:20px;width:90%;height:95%}.comment-button{width:75%;font-size:18px}.option-title{font-size:26px;text-align:center;color:#37BEFF}.btn{width:85%;padding:0px;margin:0px}
+.post-container {
+    background-color: #CCCCCC;
+    margin: 30px;
+    width: 85%;
+    border-radius: 10%;
+}
+.post-value {
+    font-size: 18px;
+    margin: 5px;
+    padding: 5px;
+}
+.header {
+    border-radius: 8%;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+    background-color: #37BEFF;
+}
+.page-header{
+    padding-top: 20px;
+    width: 90%;
+    height: 95%;
+}
+.comment-button {
+    width: 75%;
+    font-size: 18px;
+}
+.option-header{
+
+}
+.option-title{
+    font-size: 26px;
+    text-align: center;
+    color: #37BEFF;
+}
+.btn {
+    width: 85%;
+    padding: 0px;
+    margin: 0px;
+}
+.findButton {
+}
+.class-header {
+
+}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, NgModule } from "@angular/core";
 import { Router } from "@angular/router";
 
 import { BackendService } from "../../shared/backend-service/backend.service";
@@ -18,6 +18,8 @@ import firebase = require("nativescript-plugin-firebase");
 export class EstudoComponent implements OnInit {
 
     area: number;
+    queryTag: string;
+
     /*  studyGroups = 0,
         lessonExchange = 1,
         privateLessons = 2,
@@ -25,8 +27,6 @@ export class EstudoComponent implements OnInit {
     loadedPostsGroup: StudyGroup[];
     loadedPostsPrivate: PrivateLessons[];
     loadedPostsExchange: LessonExchange[];
-
-    queryTag: string;
 
     constructor(
         private router: Router,
@@ -40,7 +40,6 @@ export class EstudoComponent implements OnInit {
 
 
     checkIf(area: number) {
-        //console.log("queryTag" + this.queryTag);
         if (this.area == area) {
             return true;
         }
@@ -56,6 +55,10 @@ export class EstudoComponent implements OnInit {
 
     studyGroupForm() {
         this.router.navigate(["/group-form"])
+    }
+
+    printTag(){
+        console.log("queryTag" + this.queryTag);
     }
 
     loadStudyGroup(){
@@ -75,8 +78,16 @@ export class EstudoComponent implements OnInit {
                         post.subject,
                         post.major
                     )
-                    console.log(JSON.stringify(post));
-                    this.loadedPostsGroup.push(obj);
+                    for(let tag of obj.tags){
+                        if (!this.queryTag ||
+                            tag.toLowerCase().indexOf(
+                                this.queryTag.toLowerCase()) != -1){
+                            this.loadedPostsGroup.push(obj);
+                            console.log("queryTag: " + this.queryTag
+                                        + "tag: " + tag);
+                            break;
+                        }
+                    }
                 }
             }
         )
@@ -106,8 +117,16 @@ export class EstudoComponent implements OnInit {
                         post.classes,
                         post.major,
                     )
-                    console.log(JSON.stringify(post));
-                    this.loadedPostsExchange.push(obj);
+                    for(let tag of obj.tags){
+                        if (!this.queryTag ||
+                            tag.toLowerCase().indexOf(
+                                this.queryTag.toLowerCase()) != -1){
+                            this.loadedPostsExchange.push(obj);
+                            console.log("queryTag: " + this.queryTag
+                                        + "tag: " + tag);
+                            break;
+                        }
+                    }
                 }
             }
         )
@@ -139,7 +158,17 @@ export class EstudoComponent implements OnInit {
                         post.major,
                         post.wasTutor,
                     )
-                    this.loadedPostsPrivate.push(obj);
+                    //console.log("something wicked this way comes" + obj.tags);
+                    for(let tag of obj.tags){
+                        if (!this.queryTag ||
+                            tag.toLowerCase().indexOf(
+                                this.queryTag.toLowerCase()) != -1){
+                            this.loadedPostsPrivate.push(obj);
+                            console.log("queryTag: " + this.queryTag
+                                        + "tag: " + tag);
+                            break;
+                        }
+                    }
                 }
             }
         )

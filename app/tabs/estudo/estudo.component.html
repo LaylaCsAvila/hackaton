@@ -16,8 +16,7 @@ Feel free to customize layouts and components to change how the tab view looks.
                 <Label dock="left" class="option-title" text="GRUPOS DE ESTUDO"></Label>
             </DockLayout>
             <StackLayout>
-                <TextField hint="Insira aqui uma tag para pesquisa ou deixe vazio
-                             para pesquisar todos os posts dessa categoria."
+                <TextField hint="Insira tag para pesquisa ou para pesquisar em toda essa categoria."
                 [(ngModel)]="queryTag" ></TextField>
                 <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Encontre seu grupo"
                 (tap)="loadStudyGroup()"></Button>
@@ -39,10 +38,9 @@ Feel free to customize layouts and components to change how the tab view looks.
                 <Button dock="right" text="Novo" (tap)="lessonExchangeForm()"></Button>
                 <Label dock="left" class="option-title" text="Troca de aulas"></Label>
             </DockLayout>
-            <TextField hint="Insira aqui uma tag para pesquisa ou deixe vazio
-                             para pesquisar todos os posts dessa categoria."
+            <TextField hint="Insira tag para pesquisa ou para pesquisar em toda essa categoria."
                 [(ngModel)]="queryTag" ></TextField>
-            <Button class="find-button" text="Encontre ajuda" (tap)="loadLessonExchange()"></Button>
+            <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Encontre ajuda" (tap)="loadLessonExchange()"></Button>
             <StackLayout class="post-list" *ngFor="let post of loadedPostsExchange">
                 <StackLayout class="post-container">
                     <DockLayout class="header" stretchLastItem="false">
@@ -58,13 +56,12 @@ Feel free to customize layouts and components to change how the tab view looks.
 
         <StackLayout class="post-listing" *ngIf="checkIf(2)">
             <DockLayout class="option-header">
-                <TextField hint="Insira aqui uma tag para pesquisa ou deixe vazio
-                                 para pesquisar todos os posts dessa categoria."
+                <TextField hint="Insira tag para pesquisa ou para pesquisar em toda essa categoria."
                     [(ngModel)]="queryTag" ></TextField>
                 <Button dock="right" text="Novo" (tap)="privateLessonsForm()"></Button>
                 <Label dock="left" class="option-title" text="Aulas Particulares"></Label>
             </DockLayout>
-            <Button class="find-button" text="Encontre ajuda" (tap)="loadPrivateLesson()"></Button>
+            <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Encontre ajuda" (tap)="loadPrivateLesson()"></Button>
             <StackLayout class="post-list" *ngFor="let post of loadedPostsPrivate">
                 <StackLayout class="post-container">
                     <DockLayout class="header" stretchLastItem="false">
