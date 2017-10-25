@@ -1,13 +1,14 @@
 export class User {
     nome: string;
     email: string;
-    matricula: number;
+    // matricula: number;
     telefone: number;
+    uId: string;
 
-    constructor(nome: string, email: string, matricula: number, telefone: number) {
-        this.nome = nome;
-        this.email = email;
-        this.matricula = matricula;
-        this.telefone = telefone
+    constructor(userDB: any) {
+        this.nome = userDB.name;
+        this.email = userDB.email;
+        this.telefone = userDB.providers.phoneNumber;
+        this.uId = userDB.uid;
     }
 }

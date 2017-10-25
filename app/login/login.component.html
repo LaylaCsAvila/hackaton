@@ -1,7 +1,9 @@
 <StackLayout>
     <Label text="IdUFF"></Label>
-    <TextField></TextField>
+    <TextField [(ngModel)]="email" hint="IdUff" autocapitalization="none"
+    autocorrect="false" keyboardType="email"></TextField>
     <Label text="Senha"></Label>
-    <TextField></TextField>
+    <TextField [(ngModel)]="senha" hint="Senha" autocapitalization="none"
+    autocorrect="false" secure="true" ></TextField>
     <Button text="Logar" (tap)="login()"></Button>
 </StackLayout>
