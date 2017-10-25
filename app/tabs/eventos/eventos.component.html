@@ -4,9 +4,9 @@ Feel free to customize layouts and components to change how the tab view looks.
 -->
 <StackLayout class="page page-content" tkMainContent>
     <StackLayout class="page-header">
-        <Button text="Acadêmicos" (tap)="academics()"></Button>
-        <Button text="Cultura e Lazer" (tap)="cultureAndRecreation()"></Button>
-        <Button text="Grupos de Debate" (tap)="debateGroups()"></Button>
+        <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Acadêmicos" (tap)="academics()"></Button>
+        <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Cultura e Lazer" (tap)="cultureAndRecreation()"></Button>
+        <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Grupos de Debate" (tap)="debateGroups()"></Button>
     </StackLayout>
 
     <StackLayout class="post-listing" *ngIf="checkIf(0)">
