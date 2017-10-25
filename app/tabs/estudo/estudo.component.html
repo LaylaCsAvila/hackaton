@@ -65,7 +65,7 @@ Feel free to customize layouts and components to change how the tab view looks.
             <StackLayout class="post-list" *ngFor="let post of loadedPostsPrivate">
                 <StackLayout class="post-container">
                     <DockLayout class="header" stretchLastItem="false">
-                        <Button dock="right" class="comment-button" text="Mensagens"></Button>
+                        <Button dock="right" class="comment-button" text="Mensagens" (tap)="openModal(post.comments)"></Button>
                         <FlexboxLayout dock="left" class="test-dock">
                             <Label class="post-value" [text]="post.postTitle"></Label>
                         </FlexboxLayout>

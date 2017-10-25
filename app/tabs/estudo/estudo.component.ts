@@ -173,4 +173,8 @@ export class EstudoComponent implements OnInit {
             }
         )
     }
+
+    openModal(comments:string[]){
+        this.router.navigate(["modal/", comments[0]])
+    }
 }
