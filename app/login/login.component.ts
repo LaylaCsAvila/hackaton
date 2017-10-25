@@ -19,8 +19,6 @@ export class LoginComponent {
     ){}
 
     login() {
-        console.log(this.email);
-        console.log(this.senha);
         this.loginService.login(this.email, this.senha)
     }
 }
