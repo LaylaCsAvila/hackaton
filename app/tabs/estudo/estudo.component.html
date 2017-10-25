@@ -16,14 +16,14 @@ Feel free to customize layouts and components to change how the tab view looks.
                 <Label dock="left" class="option-title" text="GRUPOS DE ESTUDO"></Label>
             </DockLayout>
             <StackLayout>
-                <TextField hint="Insira tag para pesquisa ou para pesquisar em toda essa categoria."
+                <TextField hint="Filtre por tag"
                 [(ngModel)]="queryTag" ></TextField>
                 <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Encontre seu grupo"
                 (tap)="loadStudyGroup()"></Button>
                 <StackLayout class="post-list" *ngFor="let post of loadedPostsGroup">
                     <StackLayout class="post-container">
                         <DockLayout class="header" stretchLastItem="false">
-                            <Button dock="right" text="Mensagens"></Button>
+                            <Button dock="right" class="comment-button" text="Mensagens"></Button>
                             <Label dock="left" class="post-value" [text]="post.postTitle"></Label>
                         </DockLayout>
                         <Label class="post-value" [text]=" 'Matéria: ' + post.subject"></Label>
@@ -38,13 +38,13 @@ Feel free to customize layouts and components to change how the tab view looks.
                 <Button dock="right" text="Novo" (tap)="lessonExchangeForm()"></Button>
                 <Label dock="left" class="option-title" text="Troca de aulas"></Label>
             </DockLayout>
-            <TextField hint="Insira tag para pesquisa ou para pesquisar em toda essa categoria."
+            <TextField hint="Filtre por tag"
                 [(ngModel)]="queryTag" ></TextField>
             <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Encontre ajuda" (tap)="loadLessonExchange()"></Button>
             <StackLayout class="post-list" *ngFor="let post of loadedPostsExchange">
                 <StackLayout class="post-container">
                     <DockLayout class="header" stretchLastItem="false">
-                        <Button dock="right" text="Mensagens"></Button>
+                        <Button dock="right" class="comment-button" text="Mensagens"></Button>
                         <Label dock="left" class="post-value" [text]="post.postTitle"></Label>
                     </DockLayout>
                     <Label class="post-value" [text]=" 'Matéria: ' + post.subject"></Label>
@@ -56,16 +56,16 @@ Feel free to customize layouts and components to change how the tab view looks.
 
         <StackLayout class="post-listing" *ngIf="checkIf(2)">
             <DockLayout class="option-header">
-                <TextField hint="Insira tag para pesquisa ou para pesquisar em toda essa categoria."
-                    [(ngModel)]="queryTag" ></TextField>
                 <Button dock="right" text="Novo" (tap)="privateLessonsForm()"></Button>
                 <Label dock="left" class="option-title" text="Aulas Particulares"></Label>
             </DockLayout>
+            <TextField hint="Filtre por tag"
+            [(ngModel)]="queryTag" ></TextField>
             <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Encontre ajuda" (tap)="loadPrivateLesson()"></Button>
             <StackLayout class="post-list" *ngFor="let post of loadedPostsPrivate">
                 <StackLayout class="post-container">
                     <DockLayout class="header" stretchLastItem="false">
-                        <Button dock="right" text="Mensagens"></Button>
+                        <Button dock="right" class="comment-button" text="Mensagens"></Button>
                         <Label dock="left" class="post-value" [text]="post.postTitle"></Label>
                     </DockLayout>
                     <Label class="post-value" [text]=" 'Matéria: ' + post.subject"></Label>

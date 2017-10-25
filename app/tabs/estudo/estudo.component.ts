@@ -11,7 +11,7 @@ import firebase = require("nativescript-plugin-firebase");
 @Component({
     selector: "Estudo",
     providers: [BackendService],
-    styleUrls: ["./estudo.component.css"],
+    styleUrls: ["./estudo.component.scss"],
     moduleId: module.id,
     templateUrl: "./estudo.component.html"
 })
