@@ -1,24 +1,26 @@
-<StackLayout>
-    <Label class="form-label" text="Título da Postagem"></Label>
-    <TextField class="form-input" hint="Título" [(ngModel)]="postTitle" ></TextField>
-    <Label class="form-label" text="Periodicidade"></Label>
-    <TextField class="form-input" hint="Semanal, diário, mensal..."
-    [(ngModel)]="periodicity" ></TextField>
-    <Label class="form-label" text="Máximo de pessoas"></Label>
-    <TextField class="form-input" hint="4" [(ngModel)]="maxPeople" ></TextField>
-    <Label class="form-label" text="Matéria"></Label>
-    <TextField class="form-input" hint="Cálculo 2A, Propriedade Industrial"
-     [(ngModel)]="subject" ></TextField>
-    <Label class="form-label" text="Seu curso"></Label>
-    <TextField class="form-input" hint="Ciência da computação..."
-     [(ngModel)]="major" ></TextField>
-    <Label class="form-label" text="Tags"></Label>
-    <TextField class="form-input" hint="Insira tags separadas por vírgula"
-     [(ngModel)]="tags" ></TextField>
-    <Label class="form-label" text="Obervações"></Label>
-    <TextField class="form-input" hint="O que é importante sobre seu anúncio?"
-     [(ngModel)]="observations" ></TextField>
-
-     <Button class="btn btn-primary btn-rouded-xsm btn-active" text="Criar Post" (tap)="submit()"></Button>
-     <Button text="Voltar" (tap)="goBack()"></Button>
-</StackLayout>
+<ScrollView>
+    <StackLayout>
+        <Label class="form-label" text="Título da Postagem"></Label>
+        <TextField class="form-input" hint="Título" [(ngModel)]="postTitle" ></TextField>
+        <Label class="form-label" text="Periodicidade"></Label>
+        <TextField class="form-input" hint="Semanal, diário, mensal..."
+        [(ngModel)]="periodicity" ></TextField>
+        <Label class="form-label" text="Máximo de pessoas"></Label>
+        <TextField class="form-input" hint="4" [(ngModel)]="maxPeople" ></TextField>
+        <Label class="form-label" text="Matéria"></Label>
+        <TextField class="form-input" hint="Cálculo 2A, Propriedade Industrial"
+        [(ngModel)]="subject" ></TextField>
+        <Label class="form-label" text="Seu curso"></Label>
+        <TextField class="form-input" hint="Ciência da computação..."
+        [(ngModel)]="major" ></TextField>
+        <Label class="form-label" text="Tags"></Label>
+        <TextField class="form-input" hint="Insira tags separadas por vírgula"
+        [(ngModel)]="tags" ></TextField>
+        <Label class="form-label" text="Obervações"></Label>
+        <TextField class="form-input" hint="O que é importante sobre seu anúncio?"
+        [(ngModel)]="observations" ></TextField>
+        <Button class="btn btn-primary btn-rouded-xsm btn-active"
+                text="Criar post" (tap)="submit()"></Button>
+        <Button text="Voltar" (tap)="goBack()"></Button>
+    </StackLayout>
+</ScrollView>

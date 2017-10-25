@@ -1,7 +1,7 @@
 import { User } from "../../../shared/user/user.model";
 import { BasePost } from "../../../shared/models/base-post"
 
-export class lessonExchange extends BasePost {
+export class LessonExchange extends BasePost {
     subject: string;
     classesOfInterest: string[];
     major: string;

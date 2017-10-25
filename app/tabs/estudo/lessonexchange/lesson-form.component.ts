@@ -5,7 +5,7 @@ import { Router } from "@angular/router"
 
 import { UserService } from "../../../shared/user/user.service";
 import { User } from "../../../shared/user/user.model";
-import { lessonExchange } from "./lessonExchange.model";
+import { LessonExchange } from "./lessonExchange.model";
 import firebase = require("nativescript-plugin-firebase");
 
 @Component({
@@ -26,7 +26,7 @@ export class LessonFormComponent {
 
     constructor(
         private router: Router,
-        private userService: UserService){        
+        private userService: UserService){
         this.user = this.userService.user;
     }
 
@@ -40,7 +40,7 @@ export class LessonFormComponent {
         let formatTags = this.filterTags(this.tags);
         console.log("formatTags");
         console.log(formatTags);
-        let lessonExchangeItem = new lessonExchange(
+        let lessonExchangeItem = new LessonExchange(
             this.postTitle,
             this.observations,
             formatTags,
