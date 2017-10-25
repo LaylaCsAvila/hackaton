@@ -7,6 +7,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { LoginModule } from "./login/login.module";
 import { IntroComponent } from "./shared/intro/intro.component";
+import { StudyFormComponent } from "./tabs/estudo/studygroups/study-form.component";
 
 @NgModule({
     bootstrap: [
@@ -16,11 +17,12 @@ import { IntroComponent } from "./shared/intro/intro.component";
         NativeScriptModule,
         AppRoutingModule,
         LoginModule,
-        NativeScriptModule,
+        NativeScriptFormsModule,
     ],
     declarations: [
         AppComponent,
         IntroComponent,
+        StudyFormComponent,
     ],
     providers: [
         { provide: NgModuleFactoryLoader, useClass: NSModuleFactoryLoader }
