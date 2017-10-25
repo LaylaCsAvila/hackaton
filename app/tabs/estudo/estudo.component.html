@@ -66,7 +66,9 @@ Feel free to customize layouts and components to change how the tab view looks.
                 <StackLayout class="post-container">
                     <DockLayout class="header" stretchLastItem="false">
                         <Button dock="right" class="comment-button" text="Mensagens"></Button>
-                        <Label dock="left" class="post-value" [text]="post.postTitle"></Label>
+                        <FlexboxLayout dock="left" class="test-dock">
+                            <Label class="post-value" [text]="post.postTitle"></Label>
+                        </FlexboxLayout>
                     </DockLayout>
                     <Label class="post-value" [text]=" 'Matéria: ' + post.subject"></Label>
                     <Label class="post-value" [text]="'Descrição: ' + post.observations "></Label>
