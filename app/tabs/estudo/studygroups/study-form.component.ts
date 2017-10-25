@@ -27,7 +27,7 @@ export class StudyFormComponent {
 
     constructor(
         private router: Router,
-        private userService: UserService){        
+        private userService: UserService){
         this.user = this.userService.user;
     }
 
@@ -36,11 +36,7 @@ export class StudyFormComponent {
     }
 
     submit() {
-        console.log("this.tags");
-        console.log(this.tags);
         let formatTags = this.filterTags(this.tags);
-        console.log("formatTags");
-        console.log(formatTags);
         let studyGroupItem = new StudyGroup(
             this.postTitle,
             this.observations,

@@ -3,6 +3,7 @@ This is the component view that represents the 'Home' tab.
 Feel free to customize layouts and components to change how the tab view looks.
 -->
 <StackLayout class="page page-content" tkMainContent>
+
     <StackLayout class="page-header">
         <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Grupos de Estudo" (tap)="studyGroups()"></Button>
         <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Troca de Aulas" (tap)="lessonExchange()"></Button>
@@ -12,6 +13,9 @@ Feel free to customize layouts and components to change how the tab view looks.
     <StackLayout class="post-listing" *ngIf="checkIf(0)">
         <Label text="GRUPOS DE ESTUDO"></Label>
         <Button text="Adicionar grupo de estudo" (tap)="studyGroupForm()"></Button>
+        <StackLayout>
+            <Button text="TESTA ESSA PORRA" (tap)="testThisShit()"></Button>
+        </StackLayout>
     </StackLayout>
 
     <StackLayout class="post-listing" *ngIf="checkIf(1)">
@@ -21,4 +25,5 @@ Feel free to customize layouts and components to change how the tab view looks.
     <StackLayout class="post-listing" *ngIf="checkIf(2)">
         <Label text="AULAS PARTICULARES"></Label>
     </StackLayout>
+
 </StackLayout>

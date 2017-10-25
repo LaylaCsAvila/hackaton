@@ -9,6 +9,8 @@ import { EventosComponent } from "./eventos/eventos.component";
 import { EstandeComponent } from "./estande/estande.component";
 import { TabsRoutingModule } from "./tabs-routing.module";
 import { TabsComponent } from "./tabs.component";
+import { BackendService } from "../shared/backend-service/backend.service"
+
 // import { StudyFormComponent } from "./estudo/studygroups/study-form.component";
 
 @NgModule({

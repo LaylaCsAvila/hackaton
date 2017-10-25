@@ -9,6 +9,7 @@ export class UserService {
     user: User;
 
     saveLoggedUser(userDB) {
-        this.user = new User(userDB);
+        let it = new User(userDB);
+        this.user = it;
     }
 }
