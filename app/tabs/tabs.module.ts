@@ -10,6 +10,7 @@ import { EstandeComponent } from "./estande/estande.component";
 import { TabsRoutingModule } from "./tabs-routing.module";
 import { TabsComponent } from "./tabs.component";
 // import { StudyFormComponent } from "./estudo/studygroups/study-form.component";
+// import { PrivateFormComponent } from "./estudo/privatelessons/private-form.component";
 
 @NgModule({
     imports: [
@@ -25,6 +26,8 @@ import { TabsComponent } from "./tabs.component";
         EstudoComponent,
         EstandeComponent,
         // StudyFormComponent,
+        // ExchangeFormComponent,
+        // PrivateFormComponent,
     ],
     schemas: [
         NO_ERRORS_SCHEMA

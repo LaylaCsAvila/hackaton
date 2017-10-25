@@ -10,15 +10,17 @@ Feel free to customize layouts and components to change how the tab view looks.
     </StackLayout>
 
     <StackLayout class="post-listing" *ngIf="checkIf(0)">
-        <Label text="GRUPOS DE ESTUDO"></Label>
-        <Button text="Adicionar grupo de estudo" (tap)="studyGroupForm()"></Button>
+        <Label class="text-center" text="GRUPOS DE ESTUDO"></Label>
+        <Button class="btn btn-primary btn-rouded-xsm btn-active" text="Adicionar grupo de estudo" (tap)="studyGroupForm()"></Button>
     </StackLayout>
 
     <StackLayout class="post-listing" *ngIf="checkIf(1)">
-        <Label text="TROCA DE AULAS"></Label>
+        <Label class="text-center" text="TROCA DE AULAS"></Label>
+        <Button class="btn btn-primary btn-rouded-xsm btn-active" text="Adicionar" (tap)="lessonExchangeForm()"></Button>
     </StackLayout>
 
     <StackLayout class="post-listing" *ngIf="checkIf(2)">
-        <Label text="AULAS PARTICULARES"></Label>
+        <Label class="text-center" text="AULAS PARTICULARES"></Label>
+        <Button class="btn btn-primary btn-rouded-xsm btn-active" text="Adicionar Aulas" (tap)="privateLessonsForm()"></Button>
     </StackLayout>
 </StackLayout>

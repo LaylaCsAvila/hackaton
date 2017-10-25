@@ -8,6 +8,8 @@ import { AppComponent } from "./app.component";
 import { LoginModule } from "./login/login.module";
 import { IntroComponent } from "./shared/intro/intro.component";
 import { StudyFormComponent } from "./tabs/estudo/studygroups/study-form.component";
+import { LessonFormComponent } from "./tabs/estudo/lessonexchange/lesson-form.component";
+import { PrivateFormComponent } from "./tabs/estudo/privatelessons/private-form.component";
 
 @NgModule({
     bootstrap: [
@@ -23,6 +25,8 @@ import { StudyFormComponent } from "./tabs/estudo/studygroups/study-form.compone
         AppComponent,
         IntroComponent,
         StudyFormComponent,
+        LessonFormComponent,
+        PrivateFormComponent,
     ],
     providers: [
         { provide: NgModuleFactoryLoader, useClass: NSModuleFactoryLoader }

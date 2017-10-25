@@ -44,7 +44,15 @@ export class EstudoComponent implements OnInit {
         this.area = 1;
     }
 
+    lessonExchangeForm() {
+        this.router.navigate(["/exchange-form"])
+    }
+
     privateLessons() {
         this.area = 2;
+    }
+
+    privateLessonsForm() {
+        this.router.navigate(["/private-form"])
     }
 }
