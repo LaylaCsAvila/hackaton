@@ -26,6 +26,8 @@ export class EstudoComponent implements OnInit {
     loadedPostsPrivate: PrivateLessons[];
     loadedPostsExchange: LessonExchange[];
 
+    queryTag: string;
+
     constructor(
         private router: Router,
         private backendService: BackendService
@@ -38,6 +40,7 @@ export class EstudoComponent implements OnInit {
 
 
     checkIf(area: number) {
+        //console.log("queryTag" + this.queryTag);
         if (this.area == area) {
             return true;
         }
