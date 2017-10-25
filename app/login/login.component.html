@@ -1,3 +1,32 @@
+<ActionBar title="                       UFF Space" >
+</ActionBar>
+<GridLayout backgroundColor="#CCCCCC">
+    <ScrollView>
+        <StackLayout margin="10" verticalAlignment="center">
+            <StackLayout class="form" padding="15" backgroundColor="#FFFFFF">
+                <StackLayout class="input-field">
+                    <Label text="Email" class="label font-weight-bold m-b-5"></Label>
+                    <TextField [(ngModel)]="email" hint="IdUFF" autocapitalization="none"
+                    autocorrect="false" keyboardType="email"></TextField>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+                <StackLayout class="input-field">
+                    <Label text="Senha" class="label font-weight-bold m-b-5"></Label>
+                    <TextField [(ngModel)]="senha" hint="Senha" autocapitalization="none"
+                    autocorrect="false" secure="true" ></TextField>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+                <Button class="btn btn-primary w-full" text="Entrar" (tap)="login()"></Button>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</GridLayout>
+
+
+
+
+
+<!--
 <StackLayout>
     <Label text="IdUFF"></Label>
     <TextField [(ngModel)]="email" hint="IdUff" autocapitalization="none"
@@ -7,3 +36,4 @@
     autocorrect="false" secure="true" ></TextField>
     <Button text="Logar" (tap)="login()"></Button>
 </StackLayout>
+-->
