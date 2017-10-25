@@ -12,30 +12,32 @@ Feel free to customize layouts and components to change how the tab view looks.
         </StackLayout>
 
         <StackLayout class="post-listing" *ngIf="checkIf(0)">
-            <Label text="GRUPOS DE ESTUDO"></Label>
-            <Button text="Adicionar grupo de estudo" (tap)="studyGroupForm()"></Button>
+            <DockLayout class="option-header">
+                <Button dock="right" text="Crie" (tap)="studyGroupForm()"></Button>
+                <Label dock="left" class="option-title" text="GRUPOS DE ESTUDO"></Label>
+            </DockLayout>
             <StackLayout>
-                <Button text="Encontre seu grupo" (tap)="testThisShit()"></Button>
+                <Button class="find-button" text="Encontre seu grupo" (tap)="testThisShit()"></Button>
                 <StackLayout class="post-list" *ngFor="let post of loadedPosts">
                     <StackLayout class="post-container">
-                        <StackLayout class="header">
-                            <Label class="post-value" [text]="post.postTitle"></Label>
-                        </StackLayout>
+                        <DockLayout class="header" stretchLastItem="false">
+                            <Button dock="right" text="Mensagens"></Button>
+                            <Label dock="left" class="post-value" [text]="post.postTitle"></Label>
+                        </DockLayout>
                         <Label class="post-value" [text]=" 'Matéria: ' + post.subject"></Label>
                         <Label class="post-value" [text]="'Descrição: ' + post.observations "></Label>
                         <Label class="post-value" [text]=" 'Tags: ' + post.tags"></Label>
-                        <Button class="comment-button" text="Mensagens"></Button>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
         </StackLayout>
 
         <StackLayout class="post-listing" *ngIf="checkIf(1)">
-            <Label text="TROCA DE AULAS"></Label>
+            <Label class="option-title" text="TROCA DE AULAS"></Label>
         </StackLayout>
 
         <StackLayout class="post-listing" *ngIf="checkIf(2)">
-            <Label text="AULAS PARTICULARES"></Label>
+            <Label class="option-title" text="AULAS PARTICULARES"></Label>
         </StackLayout>
 
     </StackLayout>

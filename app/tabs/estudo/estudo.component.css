@@ -1,10 +1,9 @@
 .post-container {
-    background-color: lightblue;
+    background-color: #CCCCCC;
     margin: 30px;
     width: 85%;
     border-radius: 10%;
 }
-
 .post-value {
     font-size: 18px;
     margin: 5px;
@@ -15,8 +14,30 @@
     font-weight: bold;
     font-size: 24px;
     color: white;
-    background-color: darkgray;
+    background-color: #37BEFF;
+}
+.page-header{
+    padding-top: 20px;
+    width: 90%;
+    height: 95%;
 }
 .comment-button {
-    width: 85%;
+    width: 95%;
+}
+.option-header{
+
+}
+.option-title{
+    /*font-weight: bold;*/
+    font-size: 26px;
+    text-align: center;
+    color: #37BEFF;
+}
+.btn {
+    width: 90%;
+    padding: 0px;
+    margin: 0px;
+}
+.findButton {
+    width: 90%;
 }
