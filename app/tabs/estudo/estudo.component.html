@@ -4,9 +4,9 @@ Feel free to customize layouts and components to change how the tab view looks.
 -->
 <StackLayout class="page page-content" tkMainContent>
     <StackLayout class="page-header">
-        <Button text="Grupos de Estudo" (tap)="studyGroups()"></Button>
-        <Button text="Troca de Aulas" (tap)="lessonExchange()"></Button>
-        <Button text="Aulas Particulares" (tap)="privateLessons()"></Button>
+        <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Grupos de Estudo" (tap)="studyGroups()"></Button>
+        <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Troca de Aulas" (tap)="lessonExchange()"></Button>
+        <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Aulas Particulares" (tap)="privateLessons()"></Button>
     </StackLayout>
 
     <StackLayout class="post-listing" *ngIf="checkIf(0)">

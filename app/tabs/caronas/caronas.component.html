@@ -4,8 +4,8 @@ Feel free to customize layouts and components to change how the tab view looks.
 -->
 <StackLayout class="page page-content" tkMainContent>
     <StackLayout class="page-header">
-        <Button text="Para Eventos" (tap)="forEvents()"></Button>
-        <Button text="Dia a Dia" (tap)="forEveryday()"></Button>
+        <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Para Eventos" (tap)="forEvents()"></Button>
+        <Button class="btn btn-primary btn-rounded-xsm btn-active" text="Dia a Dia" (tap)="forEveryday()"></Button>
     </StackLayout>
 
     <StackLayout class="post-listing" *ngIf="checkIf(0)">
